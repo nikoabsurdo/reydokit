@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title> Rey Do Kit </title>
+	<meta charset="utf-8">
+	<meta name="description" content="Framwork CSS e JS para design e layouts das páginas">
+	<meta name="keywords" content="Framework, CSS, JS, JQuery">
+	<meta name="author" content="Thiago Vitali e Gabriel Azeredo">
+	<link rel="shortcut icon" href="img/icon.png">
+	<!--Importando o jquery-->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 800);
+			});
+		});
+	</script>
+
+
+	<!--Preparando o uso do Bootstrap-->
+	<!--Habilitando a leitura das medias queries-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Importando o css do Bootastrap-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!--Importando o js para a página-->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.css"></script>
+	<link rel="stylesheet" type="text/css" href="css/whisky.css">
+	<link rel="stylesheet" type="text/css" href="css/cssmenu.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header class="topo" id="topo" style="margin:0">
+		<div class="topo1">
+			<p>Entrega grátis - Porto Alegre - Viamão - Alvorada - nas compras acima de R$: 300
+				<!--Colocar uma imagem de topo pelo css-->
+				<!--De preferencia um slider-->
+	</header>
+	<nav id='cssmenu' class="align-center">
+		<ul>
+			<li><a href="index.html" class="">Home</a> </li>
+			<li><a href="#produto" class="scroll">Categorias</a></li>
+			<li><a href="#contato" class="scroll">Contato</a></li>
+		</ul>
+	</nav>
+	<section class="conteudo1" style="height:500px"></section>
+	<section class="conteudo2" id="produto">
+        <div>
+			<a class="caixinha" id="whisky">
+				<figure><img src="img/black.jpg" height="500%"></figure>
+				<h2>Black Joker Tradicional</h2>
+				<h2>R$189,90</h2>
+			</a>
+		</div>
+		<div>
+			<a class="caixinha">
+				<figure><img src="img/jack.jpg" alt=""></figure>
+				<h2>Jack Daniel's</h2>
+				<h2>R$179,89</h2>
+			</a>
+		</div>
+		<div>
+			<a class="caixinha">
+				<figure><img src="img/buchanas.jpg" alt=""></figure>
+				<h2>Buchanan's 18 anos </h2>
+				<h2>R$550,00</h2>
+			</a>
+		</div>
+		<div>
+
+    </section>
+
+    </section>
+    
+    <section class="conteudo3" id="galeria">
+        <h1>BEBA COM RESPONSABILIDADE. “Proibida a venda para menores de 18 anos”</h1>
+        <div class="rey" id="rey">
+            <img src="img/logo.jpg">
+        </div>
+        <h1>_____________________________________________________________________________</h1>
+        <div class="pagamento" id="pagamento">
+            <img src="img/pagamentos.jpg">
+            <h4>E-mail – reydokitmatriz@gmail.com</h4>
+            <h4>Telefone – (51) 9.9999-9999</h4>
+        </div>
+        <h3>BEBA COM RESPONSABILIDADE. “Proibida a venda para menores de 18 anos”.</h3>
+    </section>
+    <div class="row container-fluid">
+        <a href="#topo" class="botaotopo scroll">
+            <img src="img/seta.png" alt="topo" style="width:50px">
+        </a>
+    </div>
+    <footer>
+        <cite>2022 Rey do Kit – Todos os direitos reservados</cite>
+    </footer>
+    </body>
+    
+    </html>
